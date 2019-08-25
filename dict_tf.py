@@ -10,12 +10,13 @@ ts = time.time()
 
 client = MongoClient("mongodb://localhost:27017")
 db_src = client['facebook']
-db_dst = client['dicionario3']
+db_dst = client['dicionario']
+
 # collection_src = db_src['engenharia.da.computacao.ufam']
 # collection_dst = db_dst['engenharia.da.computacao.ufam']
 # collection_dst.create_index([('term',TEXT)],name='search_index', default_language='portuguese')
 
-sources = ['ACriticaCom']#,'UOLNoticias','bncplay','classificadosam','classificadosmanaus','compraevendamanaus','g1','radiocbn']
+sources = ['ACriticaCom','UOLNoticias','bncplay','classificadosam','classificadosmanaus','compraevendamanaus','g1','radiocbn']
 
 data = [[],[]]
 
